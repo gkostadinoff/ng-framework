@@ -1,0 +1,9 @@
+<div class='card' *ngIf="product">
+  <div class='card-header'>
+    {{ pageTitle + ': ' + product.productName}}
+  </div>
+  <button (click)="goBackToList()">Back</button>
+</div>
+<div *ngIf="errorMessage" style="color: red">
+  {{errorMessage}}
+</div>
